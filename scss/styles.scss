@@ -47,6 +47,7 @@ $border: #dcd9d9;
 // Define text colors
 $heading: #374054;
 $text: #74808a;
+$nav-text: #fff;
 
 /*
     ---------------------
@@ -145,7 +146,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: end;
     z-index: 10;
     animation-name: dropHeader;
     animation-iteration-count: 1;
@@ -154,7 +155,6 @@ header {
 
     ul {
         display: inline-block;
-        background: $background;
         text-align: center;
         padding: 10px;
         margin: 0;
@@ -168,7 +168,7 @@ header {
 
     a {
         display: block;
-        color: $base-color;
+        color: $nav-text;
         padding: 10px;
 
         &:hover {
@@ -186,6 +186,11 @@ header {
 
     &.active {
         display: block;
+        display: $background;
+
+        a {
+            color: $text;
+        }
     }
 
     &.sticky {
@@ -926,7 +931,7 @@ footer {
         box-shadow: none;
         border-radius: 0;
         width: 100%;
-
+        background: $background;
         li {
             display: block;
             margin-bottom: 10px;
