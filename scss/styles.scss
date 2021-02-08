@@ -354,14 +354,13 @@ footer {
     background-size: cover;
     padding: 15px;
     overflow: hidden;
+    display: flex;
 }
 
 #lead-content {
-    position: absolute;
+    position: relative;
     z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin:auto;
     text-align: center;
 
     h1, h2 {
